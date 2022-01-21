@@ -13,5 +13,8 @@ sudo pacman -Syu neofetch bspwm sxhkd nitrogen picom rofi
 ## AUR Stuff
 paru -S lxappearance nordic-darker-theme lightdm betterlockscreen lightdm-webkit2-greeter wpgtk-git spicetify-cli-git
 
+## Virtualbox stuff
+sudo pacman -Syu virtualbox virtualbox-ext-vnc virtualbox-guest-iso virtualbox-guest-utils virtualbox-host-dkms 
+
 ## Ethernet stuff
 sudo ip link set enp2s0 up
