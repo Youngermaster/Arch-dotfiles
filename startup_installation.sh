@@ -16,5 +16,8 @@ paru -S lxappearance nordic-darker-theme lightdm betterlockscreen lightdm-webkit
 ## Virtualbox stuff
 sudo pacman -Syu virtualbox virtualbox-ext-vnc virtualbox-guest-iso virtualbox-guest-utils virtualbox-host-dkms 
 
+## More development stuff
+sudo pacman -Syu nodejs npm
+
 ## Ethernet stuff
 sudo ip link set enp2s0 up
