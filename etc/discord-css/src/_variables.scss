@@ -1,0 +1,45 @@
+/* OTHER BASE STUFF */
+@import url("https://raw.githack.com/hormelcookies/dark-discord/hormelcookies-patch-1/src/source.css");
+@import url("https://raw.githack.com/absumm/TeardropFixes/main/theme.css");
+
+/* FONTS */
+@import url("https://cdn.jsdelivr.net/gh/aymanbagabas/iosevka-fonts@v6.1.2/dist/iosevka/iosevka.min.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.theme-dark,
+.theme-light,
+:root {
+    --background-primary: #101415 !important;
+    --background-secondary: #101415 !important;
+    --background-secondary-alt: #151a1c !important;
+    --background-tertiary: #131718 !important;
+    --background-accent: var(--brand-experiment) !important;
+    --background-floating: #131718 !important;
+    --background-modifier-hover: rgba(255, 255, 255, 0.01) !important;
+    --background-modifier-active: rgba(255, 255, 255, 0.03) !important;
+    --background-modifier-selected: rgba(255, 255, 255, 0.04) !important;
+    --background-modifier-accent: hsla(0, 0%, 100%, 0.06) !important;
+    --channeltextarea-background: var(--background-secondary-alt) !important;
+    --deprecated-card-bg: rgba(0, 0, 0, 0.2) !important;
+    --deprecated-card-editable-bg: rgba(0, 0, 0, 0.1) !important;
+    --deprecated-text-input-bg: var(--deprecated-card-editable-bg) !important;
+    --deprecated-text-input-border: var(--background-floating) !important;
+    --deprecated-text-input-border-disabled: var(--background-tertiary) !important;
+    --activity-card-background: var(--background-primary) !important;
+    --channels-default: #b7b8b8 !important;
+    --text-muted: #c4c4c4 !important;
+    --text-normal: #c5c8c9 !important;
+    --interactive-normal: #c4c4c4 !important;
+    --interactive-hover: #b7b8b8 !important;
+    --interactive-active: #fff !important;
+    --interactive-muted: #b7b8b8 !important;
+    --header-primary: white !important;
+    --header-secondary: #c9c9c9 !important;
+    --toast-background: var(--background-primary) !important;
+    --toast-header: var(--background-tertiary) !important;
+    --toast-contents: var(--background-secondary) !important;
+    --toast-box-shadow: rgba(0, 0, 0, 0.2) !important;
+    --toast-border: var(--background-tertiary) !important;
+
+    --background-message-hover: transparent !important;
+}

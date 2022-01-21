@@ -1,0 +1,10 @@
+menu {
+  //background: rgba(255,255,255,0.1);
+  //background: $background-2;
+  background: $background-2;
+  padding: 10px;
+  menuitem {
+    padding: 8px;
+    &:hover { background: $background-1; }
+  }
+}

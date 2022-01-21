@@ -1,0 +1,36 @@
+.theme-dark,
+.theme-light {
+    .disableColor-2z9rkr,
+    .iconBackgroundTierNone-3ZkOsa,
+    .iconBackgroundTierOne-2OQMBY,
+    .iconBackgroundTierThree-FWlUL9,
+    .iconBackgroundTierTwo-Eab9L6 {
+        color: hsl(302, calc(var(--saturation-factor, 1) * 100%), 72.5%) !important;
+    }
+    
+    .tierMarkerAccomplished-2MiXeg {
+        background-color: rgb(255, 115, 250) !important;
+    }
+    
+    .tierMarkerInProgress-24LMzJ  {
+        background-color: transparent !important;
+    }
+
+    .perk-2WeBWW {
+        background-color: var(--background-primary) !important;
+    }
+
+    .perksModal-12XaFK {
+        background-color: var(--background-primary) !important;
+    }
+
+    .perksModal-1pSu7w {
+        background-color: var(--background-secondary) !important;
+    }
+
+    .tierMarkerBackground-3q29am,
+    .barBackground-2EEiLw,
+    .feature-2IUcBI {
+        background-color: var(--background-floating) !important;
+    }
+}

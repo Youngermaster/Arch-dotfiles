@@ -1,0 +1,148 @@
+/* Literally stuff I don't know where to put to. */
+
+.theme-dark,
+.theme-light {
+    /* PADDING FIX */
+    .infoScroller-1Qu30O {
+        padding: 20px !important;
+    }
+
+    .templatesList-2E6rTe {
+        padding: 16px;
+    }
+
+    .scroller-3tPHw0 {
+        padding-right: 16px !important;
+    }
+
+    /* THREAD FIX */
+    .container-3hZ-gs {
+        background-color: var(--background-tertiary) !important;
+        border-radius: 16px;
+        border-top-left-radius: 0px;
+        box-shadow: var(--elevation-low);
+    }
+
+    /* OTHER SHIT */
+    .activity-3v9l4T {
+        padding-bottom: 8px;
+    }
+
+    .container-1_ClKi {
+        padding: 16px !important;
+    }
+
+    .drawerSizingWrapper-17Mss4 {
+        right: 30px;
+    }
+
+    .markup-eYLPri code,
+    .embedFull-1HGV2S  {
+        background-color: var(--background-tertiary);
+    }
+
+    .emptyChannelIcon-cc932w {
+        display: none;
+    }
+
+    .role-3UN8jj {
+        background-color: var(--background-tertiary);
+    }
+
+    .scroller-3BxosC {
+        padding: 8px !important;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .header-2V-4Sw {
+        margin-left: -4px !important;
+        width: 246px !important;
+    }
+
+    .flex-1xMQg5 button {
+        background-color: var(--background-tertiary);
+        margin: 0 2px;
+    }
+
+    .unread-2wipsx {
+        background-color: #192022;
+    }
+
+    /* PADDING FIXES */
+    .scrollContent-m6ynud {
+        padding: 0 12px 0 12px !important;
+    }
+
+    .body-3HBlXn {
+        padding: 0 16px 0 16px !important;
+    }
+
+    .scroller-3GIiMh {
+        padding: 16px !important;
+    }
+
+    /* MARGIN FIXES */
+    .container-3w7J-x {
+        margin-right: 7px;
+    }
+
+    .wrapper-2tAnRe span {
+        font-size: 90%;
+    }
+
+    /* NOTES */
+    .note-3M15gE textarea {
+        background-color: var(--background-primary);
+    }
+
+    /* CHANNEL TOPIC */
+    .root-g14mjS {
+        border-radius: 12px;
+    }
+
+    /* EMOJI INFO */
+    .guildSection-2Zyzy8 {
+        background-color: #151a1c;
+    }
+
+    /* JOIN SERVER MODAL */
+    .root-g14mjS,
+    .footer-31IekZ {
+        box-shadow: none !important;
+        background-color: var(--background-tertiary);
+    }
+
+    .footer-31IekZ {
+        background-color: var(--background-primary);
+    }
+
+    /* SERVER DISCOVERY */
+    .pageWrapper-2PwDoS {
+        background-color: var(--background-primary);
+    }
+
+    .card-2TuZPZ,
+    .iconMask-2fMR98,
+    .searchBox-pyIJJj {
+        background-color: var(--background-tertiary);
+    }
+
+    /* IDK */
+    /* .panels-j1Uci_, .sidebar-2K8pFh {
+        display: flex;
+        flex-direction: column-reverse;
+    } */
+
+    a[href^="http://"] {
+        color: #f65b5b !important;
+    }
+
+    /* SEARCH BAR */
+    .searchBar-zdmu7v {
+        border-radius: 8px;
+    }
+    
+}

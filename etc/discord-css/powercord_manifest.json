@@ -1,0 +1,9 @@
+{
+    "name": "discord-css",
+    "version": "1.0.5",
+    "theme": "dist/index.css",
+
+    "author": "TheRealKizu#3267",
+    "description": "a funny discord theme.",
+    "license": "Unlicense"
+}

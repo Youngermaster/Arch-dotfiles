@@ -1,0 +1,34 @@
+.theme-dark,
+.theme-light {
+    /* PRIVACY AND SAFETY */
+    .itemFilled-1cPbtg[aria-checked=true] {
+        background-color: #192022;
+    }
+
+    .itemFilled-1cPbtg {
+        background-color: #151a1c;
+    }
+
+    /* AUTHORIZED APPS */
+    .cardPrimaryOutline-1ofwVz {
+        background-color: #151a1c;
+    }
+
+    /* CONNECTIONS */
+    .accountList-305sx3 {
+        background-color: #151a1c;
+
+        .accountBtn-1YkMgV .accountBtnInner-3XK70s {
+            background-color: #192022;
+        }
+    }
+
+    .connectionHeader-2rV1ze {
+        background-color: #151a1c;
+    }
+
+    .connectionOptionsWrapper-1ipqUo {
+        background-color: #192022;
+        border-radius: 0px 0px 8px 8px;
+    }
+}

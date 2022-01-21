@@ -1,0 +1,10 @@
+{
+  "name": "discord-css",
+  "version": "1.0.5",
+  "repository": "https://github.com/TheRealKizu/discord-css.git",
+  "author": "TheRealKizu <therealkizu@protonmail.com>",
+  "license": "Unlicense",
+  "devDependencies": {
+    "scss": "^0.2.4"
+  }
+}

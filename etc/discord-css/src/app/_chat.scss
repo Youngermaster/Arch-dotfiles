@@ -1,0 +1,36 @@
+.theme-dark,
+.theme-light {
+    section[aria-label="Channel header"] {
+        div[aria-label="Help"],
+        div[aria-label="Notification Settings"] {
+            display: none;
+        }
+    }
+
+    .form-2fGMdU {
+        button {
+            transform: translateY(-0em);
+            transition: 0.25s;
+
+            &[aria-label="Send a gift"] {
+                display: none;
+            }
+
+            &:hover,
+            &:focus {
+                transform: translateY(-0.1em);
+            }
+        }
+    }
+
+    .chat-3bRxxu {
+        .jumpToPresentBar-G1R9s6 {
+            background-color: #151a1c;
+        }
+    }
+    
+    .replyBar-1YLQ2 {
+        background-color: #151a1c;
+        margin-right: 0px;
+    }
+}

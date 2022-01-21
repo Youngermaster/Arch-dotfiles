@@ -1,0 +1,70 @@
+[class*="wrapper-"][class*="guilds-"][aria-label] {
+    z-index: 30; 
+}
+
+[class*="sidebar-"] [aria-controls*="popout_"]{
+    z-index: 50;
+}
+
+/* Channel List */
+[class*="base-"] [class*="sidebar-"] {
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    bottom: 0;
+    left: -240px;
+    transition: 0.6s ease;
+}
+
+/* Hover to channelname and sidebar */
+[class*="base-"] [class*="sidebar-"]:hover {
+    left: 72px;
+}
+
+/* Hover to channelname and sidebar to hide pill*/
+[class*="base-"] [class*="sidebar-"]:hover [class*="modeUnread-"]::after {
+    transform: scale(0);
+    transition: transform 100ms;
+}
+
+/* Titlebar */
+[class*="base-"] [class*="title-"] {
+    z-index: 10;
+}
+
+/* Add mask for titlebar */
+[class*="base-"] [class*="sidebar-"]::before {
+    content: "";
+    position: fixed;
+    left: 72px;
+    top: 20px;
+    width: 160px;
+    height: 48px;
+    z-index: 30; 
+}
+
+/* Unread Channel Pill */
+[class*="base-"] [class*="sidebar-"] [class*="modeUnread-"]::after {
+    content: ""; 
+    position: fixed;
+    border-radius: 0 4px 4px 0;
+    top: 41px;
+    left: 71px;
+    width: 4px;
+    height: 8px;
+    background-color: var(--interactive-active);
+}
+
+/* Move the mask, pill, and channel down when streamer mode is enabled */
+[class*="notice-"][class*="colorStreamerMode-"] + [class*="content-"] > [class*="sidebar-"],
+[class*="notice-"][class*="colorStreamerMode-"] + [class*="content-"] > [class*="sidebar-"]::before {
+    top: 58px;
+}
+
+[class*="notice-"][class*="colorStreamerMode-"] + [class*="content-"] > [class*="sidebar-"] [class*="modeUnread-"]::after {
+    top: 78px !important;
+}
+
+[aria-label="User area"] {
+    background-color: var(--deprecated-card-editable-bg) !important;
+}

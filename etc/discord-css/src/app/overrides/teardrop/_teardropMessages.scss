@@ -1,0 +1,44 @@
+.theme-dark,
+.theme-light {
+    .cozy-VmLDNB .repliedMessage-3Z6XBG {
+        background-color: var(--background-tertiary) !important;
+
+        & ~ .contents-2MsGLg > .messageContent-2t3eCI:first-of-type::before {
+            background-color: var(--background-tertiary) !important;
+        }
+    }
+
+    .cozy-VmLDNB.message-2CShn3.mentioned-Tre-dv .messageContent-2t3eCI:not(.repliedTextContent-2hOYMB) {
+        background-color: #192022 !important;
+        border-color: var(--background-accent);
+    }
+
+    .cozy-VmLDNB .messageContent-2t3eCI:not(.repliedTextContent-2hOYMB),
+    .cozy-VmLDNB .repliedMessage-3Z6XBG,
+    .message-2CShn3 .imageWrapper-oMkQl4,
+    .embedFull-1HGV2S,
+    .wrapper-1HIH0j {
+        background-color: #151a1c;
+    }
+
+    .embedFull-1HGV2S {
+        margin-top: 6px !important;
+    }
+
+    .attachment-1PZZB2 {
+        background-color: #151a1c !important;
+        border: none !important;
+    }
+
+    .container-3i3IzO {
+        background-color: #151a1c;
+        border-radius: 0 16px 16px 16px;
+    }
+
+    .threadMessageAccessory-2W9mjC {
+        .threadMessageAccessoryPreview-13YRmc .threadMessageAccessoryContent-1HTTUq {
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+    }
+}

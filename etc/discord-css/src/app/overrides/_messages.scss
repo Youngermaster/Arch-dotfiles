@@ -1,0 +1,84 @@
+.theme-dark,
+.theme-light {
+    main[aria-label=" (channel)"] .form-2fGMdU .channelTextArea-rNsIhG {
+        margin-left: 0px !important;
+    }
+
+    .contentWrapper-SvZHNd {
+        margin-left: 28px;
+        margin-right: -28px;
+    }
+    
+    .chatHeaderBar-4vZS1x {
+        margin-right: -80px;
+    }
+
+    .newMessagesBar-265mhP {
+        display: none !important;
+    }
+
+    .messagesErrorBar-nyJGU7 {
+        width: 95%;
+        margin-left: 30px;
+    }
+
+    .divider-23swzi,
+    .wrapper-1-Fsb8 {
+        background-color: var(--background-primary);
+    }
+
+    .keybindShortcut-1BD6Z1 span {
+        box-shadow: inset 0 -4px 0 var(--background-secondary);
+    }
+
+    .messagesWrapper-1sRNjr {
+        width: 100% + 2%;
+    }
+
+    .selected-1Tbx07 {
+        background-color: var(--background-tertiary);
+    }
+
+    .uploadModal-2ifh8j {
+        transform: translateX(32px);
+    }
+
+    .users-3kndPl {
+        background-color: #151a1c;
+    }
+
+    /* REPLY */
+    .repliedMessage-3Z6XBG {
+        &::before {
+            border-color: #192022;
+        }
+    }
+
+    .cozy-VmLDNB.hasThread-3h-KJV {
+        &::after {
+            border-color: #192022;
+        }
+    }
+
+    /* AUTOCOMPLETE */
+    .categoryHeader-OpJ1Ly {
+        background-color: transparent;
+    }
+
+    .autocomplete-3NRXG8 {
+        background-color: var(--background-primary);
+    }
+
+    .replyBar-1oi75v {
+        background-color: var(--background-tertiary);
+    }
+
+    .selected-3H3-RC {
+        background-color: #192022;
+    }
+
+    /* SOME MODALS */
+    .message-G6O-Wv {
+        background-color: var(--background-primary);
+    }
+}

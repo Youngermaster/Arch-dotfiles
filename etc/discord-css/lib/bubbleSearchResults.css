@@ -1,0 +1,32 @@
+.theme-dark .container-2McqkF {
+    background-color: var(--background-tertiary) !important;
+}
+
+.theme-dark .searchAnswer-23w-CH,
+.theme-dark .searchFilter-2UfsDk,
+.theme-dark .focused-2FU0YH {
+    background-color: var(--background-primary) !important;
+}
+
+.theme-dark .option-2KkUJO:after {
+    background: none !important;
+}
+
+section[aria-label="Search Results"] {
+    right: 0px !important;
+    left: -360px !important;
+    bottom: 0px !important;
+    top: -3px !important;
+    margin-right: -342px;
+    height: calc(100% - 100px);
+    border-radius: 10px;
+    border: 2px solid var(--background-tertiary);
+    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    z-index: 30;
+}
+
+.searchBar-3dMhjb{
+    background-color: var(--background-primary);
+    width: 28px;
+    transition: width 0.1s ease-in-out;
+}

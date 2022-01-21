@@ -1,0 +1,108 @@
+env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: 'xterm-256color'
+
+window:
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 24
+    y: 24
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 1000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: 'Sarasa Mono CL Nerd Font'
+
+    # The `style` can be specified to pick a specific face.
+    style: Regular
+
+  # Bold font face
+  bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: 'Sarasa Mono CL Nerd Font'
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold
+
+  # Italic font face
+  italic:
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: 'Sarasa Mono CL Nerd Font'
+
+    # The `style` can be specified to pick a specific face.
+    style: Italic
+
+  # Point size
+  size: 9
+
+  offset:
+    y: -1
+
+  glyph_offset:
+    y: -1
+
+colors:
+  # Default colors
+  primary:
+    background: '0x101415'
+    foreground: '0xc5c8c9'
+
+  # Normal colors
+  normal:
+    black:   '0x101415'
+    red:     '0xc26f6f'
+    green:   '0x6bb05d'
+    yellow:  '0xe59e67'
+    blue:    '0x667b99'
+    magenta: '0xb185db'
+    cyan:    '0x779fa8'
+    white:   '0xc4c4c4'
+
+  # Bright colors
+  bright:
+    black:   '0x131718'
+    red:     '0xf65b5b'
+    green:   '0x8dc776'
+    yellow:  '0xe7ac7e'
+    blue:    '0x84a0c6'
+    magenta: '0xbb8fe5'
+    cyan:    '0x89b8c2'
+    white:   '0xcccccc'
+
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: 'Underline'
