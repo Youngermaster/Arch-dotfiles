@@ -31,8 +31,8 @@ picom --experimental-backends --config $HOME/.config/picom/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Set wallpaper
-# feh --no-fehbg --bg-tile "$HOME/Pictures/walls/tiled.png"
-hsetroot -fill "$HOME/Pictures/walls/personal/personal-5.jpg"
+#hsetroot -fill "$HOME/Pictures/Pictures/Wallpapers/FuturisticCyberpunkThemed.png"
+feh --bg-fill "$HOME/Pictures/Wallpapers/playing-robot.jpg"
 # Hex Gang
 # hsetroot -solid "#192022"
 
@@ -46,15 +46,20 @@ xset m 0 0
 # #                                 WINDOW RULES                               #
 # ##############################################################################
 
-bspc monitor -d I II III IV V VI
+bspc monitor -d I II III IV V VI VII VIII IX
 
-rule Vivaldi-stable                 desktop=I
-rule firefox                        desktop=I
-rule discord                        desktop=II
-rule Code                           desktop=III
-rule lunarclient                    desktop=IV state=tiled
-rule Lutris                         desktop=V state=floating
-rule Steam                          desktop=V
+#rule Vivaldi-stable                 desktop=I
+#rule firefox                        desktop=I
+#rule alacritty                      desktop=II
+#rule code                           desktop=III
+#rule lunarclient                    desktop=IV state=tiled
+#rule Lutris                         desktop=V state=floating
+#rule google-chrome                  desktop=V
+#rule Steam                          desktop=VI
+#rule vbox                           desktop=VII
+#rule discord                        desktop=VIII
+#rule Teams                          desktop=IX
+#rule spotify                        desktop=X
 rule mpv                            state=floating
 rule Viewnior                       state=floating
 
@@ -66,8 +71,8 @@ rule Viewnior                       state=floating
 
 config pointer_modifier             Mod4
 
-config border_width                 20
-config window_gap                   16
+config border_width                 5
+config window_gap                   10
 
 config top_padding                  40
 config bottom_padding               0
@@ -77,9 +82,11 @@ config borderless_monocle           true
 config gapless_monocle              true
 
 # Yes, this is stolen from gk.
-outer='0x101415'   # outer
-inner1='0x151a1c'  # focused
-inner2='0x131718'  # normal
+outer='0xd91438'   # outer
+# inner1='0x151a1c'  # focused
+inner1='0xd91438'  # focused
+inner2='0xd91438'  # focused
+#inner2='0x131718'  # normal
 
 targets() {
  	case $1 in

@@ -21,8 +21,8 @@ super + c
     bspc node -c
 
 # Move to or send window to workspace #
-super + {_,shift + }{1-8}
-	bspc {desktop -f,node -d} '^{1-8}'
+super + {_,shift + }{1-9}
+	bspc {desktop -f,node -d} '^{1-9}'
 
 # Resize window
 super + shift + {h,j,k,l}
@@ -49,11 +49,11 @@ super + l
 
 # Start alacritty
 super + Return
-    tabbed -n "term" alacritty -t "term" --embed
+    alacritty 
 
 # Open browser
 super + b
-    firefox
+    google-chrome-stable
 
 # Open application menu
 super + a
