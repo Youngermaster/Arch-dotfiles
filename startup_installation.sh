@@ -20,7 +20,7 @@ sudo pacman -Syu virtualbox virtualbox-ext-vnc virtualbox-guest-iso virtualbox-g
 
 ## More development stuff
 ### Remember to reboot the system after the installation of the keyring stuff
-sudo pacman -Syu nodejs npm texlive-core texlive-latexextra rubber
+sudo pacman -Syu nodejs npm texlive-core texlive-latexextra texlive-pictures rubber
 xdg-mime default zathura.desktop application/pdf
 paru -S visual-studio-code-bin
 sudo pacman -S gnome-keyring libsecret libgnome-keyring seahorse
