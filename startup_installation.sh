@@ -45,3 +45,6 @@ sudo pacman -Syu ffmpeg obs-studio vlc
 
 ## Ethernet stuff
 sudo ip link set enp2s0 up
+
+# Clock
+sudo timedatectl set-ntp true
