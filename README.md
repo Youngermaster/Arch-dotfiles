@@ -4,7 +4,13 @@ These are my dotfiles for my Arch Linux Machine
 
 ## How it looks?
 
+### Batman Beyond Theme
+
 ![Theme](BatmanBeyondThemeLook.png)
+
+### Endeavour OS Batman Theme
+
+![Theme](EndeavourThemeLook.png)
 
 ## Notes:
 
