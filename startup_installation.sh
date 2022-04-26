@@ -28,6 +28,9 @@ sudo pacman -Syu virtualbox virtualbox-ext-vnc virtualbox-guest-iso virtualbox-g
 ### Reboot the system an run
 #### sudo modprove vboxdrv
 
+# Containers stuff
+sudo pacman -S docker kubectl
+
 ## More development stuff
 ### Remember to reboot the system after the installation of the keyring stuff
 sudo pacman -Syu nodejs npm texlive-core texlive-latexextra texlive-pictures rubber
