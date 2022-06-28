@@ -16,6 +16,10 @@ sudo pacman -S zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting w
 sudo usermod --shell /usr/bin/zsh $USER
 sudo usermod --shell /usr/bin/zsh root
 
+## Python stuff
+python3 python-pip python-pipenv python-virtualenv
+pip3 install matplotlib numpy matplotlib jupyterlab
+
 ## Graphic Drivers
 sudo pacman -Syu nvidia nvidia-utils nvidia-settings
 
