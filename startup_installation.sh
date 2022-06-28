@@ -11,6 +11,11 @@ yay -s nerd-fonts-hack
 ## Mouse and graphics utils
 sudo pacman -S krita piper
 
+# ZSH Stuff
+sudo pacman -S zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting wmname
+sudo usermod --shell /usr/bin/zsh $USER
+sudo usermod --shell /usr/bin/zsh root
+
 ## Graphic Drivers
 sudo pacman -Syu nvidia nvidia-utils nvidia-settings
 
