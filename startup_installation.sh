@@ -2,14 +2,14 @@
 
 cd
 mkdir -p Downloads Documents Pictures AzureDevOps GitHub/Youngermaster GitLab/Youngermaster
-sudo pacman -Syu iwd git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop
+sudo pacman -Syu iwd discord git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop
 
 ## Fonts
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts
 yay -s nerd-fonts-hack
 
 ## Mouse and graphics utils
-sudo pacman -S krita piper
+sudo pacman -S kdenlive krita piper
 
 # ZSH Stuff
 sudo pacman -S zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting wmname
