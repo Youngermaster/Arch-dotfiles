@@ -2,7 +2,7 @@
 
 cd
 mkdir -p Downloads Documents Pictures AzureDevOps GitHub/Youngermaster GitLab/Youngermaster
-sudo pacman -Syu iwd git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop
+sudo pacman -Syu iwd git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools
 
 ## Communication stuff
 sudo pacman -Syu discord
