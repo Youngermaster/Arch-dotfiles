@@ -4,17 +4,23 @@ Those are some of my dotfiles for my Arch Linux Machine.
 
 ## How it looks?
 
+### Minimal Super Tengen 
+
+![Minimal Super Tengen Theme 1](Assets/MinimalSuperTengen.png)
+![Minimal Super Tengen Theme 2](Assets/MinimalSuperTengen2.png)
+
+
 ### Aesthetic AwesomeWM
 
-![Theme](AestheticAwesomeWM/background.png)
+![Aesthetic AwesomeWM Theme](AestheticAwesomeWM/background.png)
 
 ### Batman Beyond Theme
 
-![Theme](BatmanBeyondThemeLook.png)
+![Batman Beyond Theme](Assets/BatmanBeyondThemeLook.png)
 
 ### Endeavour OS Batman Theme
 
-![Theme](EndeavourThemeLook.png)
+![Endevaour Theme](Assets/EndeavourThemeLook.png)
 
 ## Notes:
 
