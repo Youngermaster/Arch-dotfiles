@@ -44,9 +44,12 @@ sudo pacman -Syu virtualbox virtualbox-ext-vnc virtualbox-guest-iso virtualbox-g
 # Containers stuff
 sudo pacman -S docker kubectl
 
+## Latex stuff
+sudo pacman -S texlive-fontsextra texlive-core texlive-latexextra texlive-pictures texlive-science rubber
+
 ## More development stuff
 ### Remember to reboot the system after the installation of the keyring stuff
-sudo pacman -Syu nodejs npm texlive-core texlive-latexextra texlive-pictures rubber
+sudo pacman -Syu nodejs npm
 xdg-mime default zathura.desktop application/pdf
 paru -S visual-studio-code-bin
 sudo pacman -S gnome-keyring libsecret libgnome-keyring seahorse
