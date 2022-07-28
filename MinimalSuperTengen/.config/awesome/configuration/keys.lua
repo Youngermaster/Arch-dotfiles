@@ -48,6 +48,11 @@ awful.keyboard.append_global_keybindings({
 		awful.spawn(apps.default.web_browser)
 	end, { description = "open web browser", group = "app" }),
 
+	--- Flameshot
+	awful.key({ mod, shift }, "s", function()
+		awful.spawn(apps.default.flameshot)
+	end, { description = "open Flameshot GUI", group = "app" }),
+
 	--- WM
 	--- ~~
 	--- Restart awesome
@@ -343,10 +348,10 @@ awful.keyboard.append_global_keybindings({
 		awful.layout.set(awful.layout.suit.tile)
 	end, { description = "set tile layout", group = "layout" }),
 
-	--- Set floating layout
-	awful.key({ mod, shift }, "s", function()
-		awful.layout.set(awful.layout.suit.floating)
-	end, { description = "set floating layout", group = "layout" }),
+	--- [Unused] Set floating layout
+	---awful.key({ mod, shift }, "s", function()
+		---awful.layout.set(awful.layout.suit.floating)
+	---end, { description = "set floating layout", group = "layout" }),
 
 	--- Layout machi
 	awful.key({ mod }, ".", function()
