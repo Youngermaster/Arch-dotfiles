@@ -190,8 +190,8 @@ fi
 compinit -u -d "$compfile"
 
 # zsh auto suggestions and syntax highlighting and auto completion
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Custom Highlight syntax
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#4C566A,underline"
@@ -258,12 +258,6 @@ notify-send "cool1" "yeah it is working"
 notify-send "cool2" "yeah it is working"'
 
 # ---------------P R O M P T------------------
-# Init Starship
-eval "$(starship init zsh)"
-# Setup Starship custom prompt
-export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
