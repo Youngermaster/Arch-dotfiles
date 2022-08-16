@@ -199,9 +199,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#4C566A,underline"
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="false"
 
-# fzf source
-source /usr/share/fzf/key-bindings.zsh
-
 ###############################
 # ****** ALIAS SECTION ****** #
 ###############################
