@@ -1,7 +1,6 @@
 # ! Make sure to install Paru first.
-
 cd
-mkdir -p Downloads Documents Pictures AzureDevOps GitHub/Youngermaster GitLab/Youngermaster
+mkdir -p BitBucket Downloads Documents Pictures/Wallpapers AzureDevOps GitHub/Youngermaster GitLab/Youngermaster
 sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools
 
 ## Communication stuff
@@ -10,7 +9,7 @@ paru -S teams
 
 ## Fonts
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts
-yay -s nerd-fonts-hack
+paru -s nerd-fonts-hack
 
 ## Mouse and graphics utils
 sudo pacman -S kdenlive krita piper
