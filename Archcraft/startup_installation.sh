@@ -3,8 +3,11 @@ cd
 mkdir -p BitBucket Downloads Documents Pictures/Wallpapers AzureDevOps GitHub/Youngermaster GitLab/Youngermaster
 sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools
 
+## Stuff
+paru -S google-chrome spotify windscribe-bin
+
 ## Communication stuff
-sudo pacman -Syu discord
+sudo pacman -Syu discord wezterm flatpak
 paru -S teams
 
 ## Mouse and graphics utils
@@ -48,3 +51,24 @@ sudo pacman -S gnome-keyring libsecret libgnome-keyring seahorse
 
 ## OBS
 sudo pacman -Syu ffmpeg obs-studio vlc
+
+# Config files
+cp -r .config/* ~/.config
+
+# Fonts
+mkdir -p ~/.fonts/
+mkdir -p ~/.local/share/fonts/
+cp -r fonts/* ~/.fonts/
+cp -r fonts/* ~/.local/share/fonts/
+fc-cache -fv
+
+# Flatpak
+flatpak install flathub io.github.mimbrero.WhatsAppDesktop -y
+flatpak install flathub org.telegram.desktop -y
+flatpak install flathub md.obsidian.Obsidian -y
+mkdir ~/Obsidian/
+mkdir -p ~/GitHub/Youngermaster/
+mkdir ~/GitHub/AnotherOnes/
+mkdir -p ~/GitLab/Youngermaster/
+mkdir ~/GitLab/AnotherOnes/
+mkdir ~/ISOs ~/AndroidStudio ~/Flutter
