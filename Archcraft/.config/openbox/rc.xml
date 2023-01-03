@@ -672,6 +672,11 @@
         <command>wezterm</command>
       </action>
     </keybind>
+   <keybind key="W-Shift-s">
+      <action name="Execute">
+        <command>flameshot gui</command>
+      </action>
+    </keybind> 
     <keybind key="W-f">
       <action name="Execute">
         <command>thunar</command>

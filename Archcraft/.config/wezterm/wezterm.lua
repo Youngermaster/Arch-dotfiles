@@ -29,7 +29,7 @@ return {
 		},
 	},
 	warn_about_missing_glyphs = false,
-	font_size = 16,
+	font_size = 18,
 	line_height = 1.0,
 
 	-- Cursor style
@@ -186,3 +186,4 @@ return {
 	window_close_confirmation = "NeverPrompt",
 	window_frame = { active_titlebar_bg = "#090909", font = font_with_fallback(font_name, { bold = true }) },
 }
+
