@@ -1,7 +1,7 @@
 # ! Make sure to install Paru first.
 cd
 mkdir -p BitBucket Downloads Documents Pictures/Wallpapers AzureDevOps GitHub/Youngermaster GitLab/Youngermaster
-sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools
+sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools cmake
 
 ## Stuff
 paru -S google-chrome spotify windscribe-bin
@@ -24,6 +24,9 @@ pip3 install matplotlib numpy matplotlib jupyterlab
 
 ## Graphic Drivers
 sudo pacman -Syu nvidia nvidia-utils nvidia-settings
+paru -S optimus-manager optimus-manager-qt
+git clone https://github.com/BigAnteater/BetterBattery && cd BetterBattery
+sudo ./jumpstart.sh
 
 # Audio Stuff
 sudo pacman -Syu alsa alsa-utils pulsemixer
