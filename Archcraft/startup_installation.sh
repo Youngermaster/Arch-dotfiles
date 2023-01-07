@@ -32,9 +32,12 @@ pip3 install matplotlib numpy matplotlib jupyterlab
 ## Graphic Drivers
 sudo pacman -Syu nvidia nvidia-utils nvidia-settings
 paru -S optimus-manager optimus-manager-qt
+## Battery life stuff
 cd ~/GitHub/AnotherOnes
 git clone https://github.com/BigAnteater/BetterBattery && cd BetterBattery
+chmod +x
 sudo ./jumpstart.sh
+paru -S nbfc-linux
 
 # Audio Stuff
 sudo pacman -Syu alsa alsa-utils pulsemixer
