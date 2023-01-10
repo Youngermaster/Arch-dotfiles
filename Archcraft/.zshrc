@@ -173,8 +173,8 @@ fi
 compinit -u -d "$compfile"
 
 # zsh auto suggestions and syntax highlighting and auto completion
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Custom Highlight syntax
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#4C566A,underline"
@@ -275,6 +275,8 @@ export PATH="$PATH:/home/youngermaster/Flutter/flutter/bin"
 export PATH="$PATH:/home/youngermaster/AndroidStudio/android-studio/bin"
 export PATH="$PATH:/home/youngermaster/JetBrains/Rider/bin/"
 export PATH="$PATH:/home/youngermaster/AppImages"
+## Flutter
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 
 # Android SDK Tools
 export PATH="$PATH:/home/youngermaster/Android/Sdk/build-tools/32.0.0/"
