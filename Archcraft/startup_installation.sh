@@ -64,6 +64,9 @@ paru -S visual-studio-code-bin
 sudo pacman -S gnome-keyring libsecret libgnome-keyring seahorse
 
 ## OBS
+### Install Headers
+### sudo pacman -S linux61-headers
+sudo pacman -Sy v4l2loopback-dkms
 sudo pacman -Syu ffmpeg obs-studio vlc
 
 # Config files
