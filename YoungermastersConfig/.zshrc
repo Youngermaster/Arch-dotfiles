@@ -277,6 +277,10 @@ export PATH="$PATH:/home/youngermaster/JetBrains/Rider/bin/"
 export PATH="$PATH:/home/youngermaster/AppImages"
 ## Flutter
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+## Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Android SDK Tools
 export PATH="$PATH:/home/youngermaster/Android/Sdk/build-tools/32.0.0/"
