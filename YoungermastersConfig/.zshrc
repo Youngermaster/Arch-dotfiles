@@ -268,6 +268,7 @@ setopt appendhistory
 export PATH=$PATH:$HOME/.cargo/env
 export PATH="$HOME/.local/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.nimble/bin
 export DOTNET_ROOT="/usr/share/dotnet"
 export PATH="$PATH:/usr/share/dotnet"
