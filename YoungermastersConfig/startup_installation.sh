@@ -1,4 +1,4 @@
-# ! Make sure to install Paru first.
+# Creating relevant folders.
 mkdir ~/Obsidian/
 mkdir ~/BitBucket
 mkdir -p ~/GitHub/Youngermaster/
@@ -8,14 +8,20 @@ mkdir -p ~/GitLab/AnotherOnes/
 mkdir -p ~/ISOs ~/AndroidStudio ~/Flutter
 cd
 mkdir -p BitBucket Downloads Documents Pictures/Wallpapers AzureDevOps GitHub/Youngermaster GitLab/Youngermaster
+
+# Reflector: Faster Mirror Speeds for Arch Linux!
+## Thanks to  DenshiVideo's video (https://youtu.be/-1xup2BHUKk)
+sudo pacman -S reflector
+sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist
+
+# General packages
 sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools cmake flatpak tree
 
 ## Stuff
-paru -S google-chrome spotify windscribe-bin
+yay -S google-chrome spotify windscribe-bin teams slack-desktop
 
 ## Communication stuff
 sudo pacman -Syu discord wezterm flatpak
-paru -S teams
 
 ## Mouse and graphics utils
 sudo pacman -S kdenlive krita piper
@@ -31,7 +37,7 @@ pip3 install matplotlib numpy matplotlib jupyterlab
 
 ## Graphic Drivers
 sudo pacman -Syu nvidia nvidia-utils nvidia-settings
-paru -S optimus-manager optimus-manager-qt
+yay -S optimus-manager optimus-manager-qt
 ## Battery life stuff
 cd ~/GitHub/AnotherOnes
 git clone https://github.com/BigAnteater/BetterBattery && cd BetterBattery
@@ -60,7 +66,7 @@ sudo pacman -S texlive-fontsextra texlive-core texlive-latexextra texlive-pictur
 ### Remember to reboot the system after the installation of the keyring stuff
 sudo pacman -Syu nodejs npm
 xdg-mime default zathura.desktop application/pdf
-paru -S visual-studio-code-bin
+yay -S visual-studio-code-bin
 sudo pacman -S gnome-keyring libsecret libgnome-keyring seahorse
 
 ## OBS
@@ -83,3 +89,6 @@ fc-cache -fv
 flatpak install flathub io.github.mimbrero.WhatsAppDesktop -y
 flatpak install flathub org.telegram.desktop -y
 flatpak install flathub md.obsidian.Obsidian -y
+
+# Databases
+yay -S mongosh-bin mongodb-bin mongodb-tools-bin mongodb-compass
