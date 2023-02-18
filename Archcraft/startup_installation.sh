@@ -15,10 +15,11 @@ sudo pacman -S reflector
 sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist
 
 # General packages
-sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools cmake flatpak tree
+sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools cmake flatpak tree redshift clang ninja
+sudo pacman -S jdk11-openjdk jre11-openjdk
 
 ## Stuff
-yay -S google-chrome spotify windscribe-bin teams slack-desktop
+yay -S google-chrome spotify windscribe-bin teams slack-desktop onlyoffice-bin
 
 ## Communication stuff
 sudo pacman -Syu discord wezterm flatpak
@@ -92,3 +93,14 @@ flatpak install flathub md.obsidian.Obsidian -y
 
 # Databases
 yay -S mongosh-bin mongodb-bin mongodb-tools-bin mongodb-compass
+
+# Hyperconfig
+yay -S hyprland-bin polkit-gnome ffmpeg neovim viewnior       \
+rofi pavucontrol thunar starship wl-clipboard wf-recorder     \
+swaybg grimblast-git ffmpegthumbnailer tumbler playerctl      \
+noise-suppression-for-voice thunar-archive-plugin kitty       \
+waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
+nwg-look-bin nordic-theme papirus-icon-theme dunst
+
+# Check out these dotfiles
+# https://github.com/iamverysimp1e/dots
