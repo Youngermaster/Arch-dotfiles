@@ -31,6 +31,8 @@ sudo pacman -S kdenlive krita piper
 sudo pacman -S zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting wmname
 sudo usermod --shell /usr/bin/zsh $USER
 sudo usermod --shell /usr/bin/zsh root
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 ## Python stuff
 sudo pacman -S python3 python-pip python-pipenv python-virtualenv
@@ -38,13 +40,7 @@ pip3 install matplotlib numpy matplotlib jupyterlab
 
 ## Graphic Drivers
 sudo pacman -Syu nvidia nvidia-utils nvidia-settings
-yay -S optimus-manager optimus-manager-qt
-## Battery life stuff
-cd ~/GitHub/AnotherOnes
-git clone https://github.com/BigAnteater/BetterBattery && cd BetterBattery
-chmod +x
-sudo ./jumpstart.sh
-paru -S nbfc-linux
+yay -S envycontrol
 
 # Audio Stuff
 sudo pacman -Syu alsa alsa-utils pulsemixer
@@ -52,10 +48,17 @@ sudo pacman -Syu alsa alsa-utils pulsemixer
 ## More stuff
 sudo pacman -Syu neofetch bspwm sxhkd nitrogen picom rofi
 
-## Virtualbox stuff
-sudo pacman -Syu virtualbox virtualbox-ext-vnc virtualbox-guest-iso virtualbox-guest-utils virtualbox-host-modules-arch
-### Reboot the system an run
-#### sudo modprove vboxdrv
+# GNOME stuff
+yay -S gnome-browser-connector
+
+## Qemu
+sudo pacman -S archlinux-keyring
+sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat
+sudo pacman -S libguestfs
+sudo usermod -aG libvirt $USER
+sudo usermod -aG kvm $USER
+sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
 
 # Containers stuff
 sudo pacman -S docker kubectl
