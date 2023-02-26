@@ -24,6 +24,10 @@ yay -S google-chrome spotify windscribe-bin teams slack-desktop onlyoffice-bin
 ## Communication stuff
 sudo pacman -Syu discord wezterm flatpak
 
+## Powerprofiles
+sudo pacman -S power-profiles-daemon
+sudo systemctl enable power-profiles-daemon.service
+
 ## Mouse and graphics utils
 sudo pacman -S kdenlive krita piper
 
