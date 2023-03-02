@@ -18,6 +18,9 @@ sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools cmake flatpak tree redshift clang ninja
 sudo pacman -S jdk11-openjdk jre11-openjdk
 
+# Doom Emacs
+pacman -S git emacs ripgrep fd
+
 ## Stuff
 yay -S google-chrome spotify windscribe-bin teams slack-desktop onlyoffice-bin
 
@@ -66,6 +69,8 @@ sudo systemctl start libvirtd.service
 
 # Containers stuff
 sudo pacman -S docker kubectl
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
 ## Latex stuff
 sudo pacman -S texlive-fontsextra texlive-core texlive-latexextra texlive-pictures texlive-science rubber
