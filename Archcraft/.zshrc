@@ -295,6 +295,7 @@ export PATH="$PATH:/usr/share/pomodoro_cli/"
 
 # Git config
 eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/aur
 ssh-add ~/.ssh/id_ed25519_young_bitbucket
 ssh-add ~/.ssh/id_ed25519_youngermaster_github
 ssh-add ~/.ssh/id_ed25519_youngermaster_gitlab
