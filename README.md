@@ -58,6 +58,7 @@ This configs are in the folder [`Archcraft`](https://github.com/Youngermaster/Ar
 
 I use these repositories as a base to start:
 
+- https://github.com/iamverysimp1e/dots
 - https://github.com/rxyhn/dotfiles
 - https://github.com/Axarva/dotfiles-2.0
 - https://github.com/janleigh/dotfiles
