@@ -92,16 +92,6 @@ sudo pacman -S gnome-keyring libsecret libgnome-keyring seahorse
 sudo pacman -Sy v4l2loopback-dkms
 sudo pacman -Syu ffmpeg obs-studio vlc
 
-# Config files
-cp -r .config/* ~/.config
-
-# Fonts
-mkdir -p ~/.fonts/
-mkdir -p ~/.local/share/fonts/
-cp -r fonts/* ~/.fonts/
-cp -r fonts/* ~/.local/share/fonts/
-fc-cache -fv
-
 # Flatpak
 flatpak install flathub io.github.mimbrero.WhatsAppDesktop -y
 flatpak install flathub org.telegram.desktop -y
@@ -130,6 +120,20 @@ git clone --depth=1 https://github.com/decaycs/decay-gtk
 cd decay-gtk
 mkdir -p ~/.themes
 cp -r ./Themes/Dark-decay ~/.themes
+
+cd ~/GitHub/Youngermaster/Arch-dotfiles/Archcraft/
+# Config files
+cp -r .config/* ~/.config
+
+# Fonts
+mkdir -p ~/.fonts/
+mkdir -p ~/.local/share/fonts/
+cp -r fonts/* ~/.fonts/
+cp -r fonts/* ~/.local/share/fonts/
+fc-cache -fv
+
+## ! TODO Add the Fonts from the Google Drive
+## ! TODO add the README.md pictures
 
 # Check out these dotfiles
 # https://github.com/iamverysimp1e/dots
