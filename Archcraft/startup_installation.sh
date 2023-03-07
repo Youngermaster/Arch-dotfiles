@@ -19,7 +19,7 @@ sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger 
 sudo pacman -S jdk11-openjdk jre11-openjdk
 
 # Doom Emacs
-pacman -S git emacs ripgrep fd
+sudo pacman -S git emacs ripgrep fd
 
 ## Stuff
 yay -S google-chrome spotify windscribe-bin teams slack-desktop onlyoffice-bin
@@ -47,6 +47,9 @@ pip3 install matplotlib numpy matplotlib jupyterlab
 
 ## Graphic Drivers
 sudo pacman -Syu nvidia nvidia-utils nvidia-settings
+yay -S system76-power system76-acpi-dkms system76-dkms system76-io-dkms
+sudo systemctl enable com.system76.PowerDaemon.service
+sudo systemctl start com.system76.PowerDaemon.service
 yay -S envycontrol
 
 # Audio Stuff
@@ -56,6 +59,7 @@ sudo pacman -Syu alsa alsa-utils pulsemixer
 sudo pacman -Syu neofetch bspwm sxhkd nitrogen picom rofi
 
 # GNOME stuff
+sudo pacman -S gnome-tweaks
 yay -S gnome-browser-connector
 
 ## Qemu
@@ -107,12 +111,25 @@ flatpak install flathub md.obsidian.Obsidian -y
 yay -S mongosh-bin mongodb-bin mongodb-tools-bin mongodb-compass
 
 # Hyperconfig
-yay -S hyprland-bin polkit-gnome ffmpeg neovim viewnior       \
-rofi pavucontrol thunar starship wl-clipboard wf-recorder     \
+yay -S hyprland-nvidia-git touchegg
+sudo systemctl enable touchegg.service && sudo systemctl start touchegg.service
+yay -S polkit-gnome ffmpeg neovim viewnior       \
+pavucontrol thunar starship wl-clipboard wf-recorder     \
 swaybg grimblast-git ffmpegthumbnailer tumbler playerctl      \
 noise-suppression-for-voice thunar-archive-plugin kitty       \
-waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
-nwg-look-bin nordic-theme papirus-icon-theme dunst
+waybar-hyprland wlogout swaylock-effects pamixer     \
+nwg-look-bin papirus-icon-theme dunst
+yay -S rofi dunst kitty swaybg swaylock-fancy-git swayidle pamixer light brillo
+yay -S bc blueberry bluez coreutils dbus findutils gawk jaq light networkmanager network-manager-applet pavucontrol playerctl procps ripgrep socat udev upower util-linux wget wireplumber wlogout eww-wayland pipewire-pulse
+yay -S waybar-hyprland
+yay -S grim swappy slurp
+yay -S rofi-emoji
+yay -S nwg-look
+cd ~/GitHub/AnotherOnes
+git clone --depth=1 https://github.com/decaycs/decay-gtk
+cd decay-gtk
+mkdir -p ~/.themes
+cp -r ./Themes/Dark-decay ~/.themes
 
 # Check out these dotfiles
 # https://github.com/iamverysimp1e/dots
