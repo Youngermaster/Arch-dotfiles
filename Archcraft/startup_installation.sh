@@ -15,11 +15,17 @@ sudo pacman -S reflector
 sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist
 
 # General packages
-sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools cmake flatpak tree redshift clang ninja
+sudo pacman -Syu iwd bind git vim neovim xorg xorg-xinit dmenu lxsession ranger lsd bat shotwell libx11 base-devel firefox flameshot neofetch alacritty feh networkmanager brightnessctl htop starship alsa-lib alsa-plugins alsa-utils nautilus dunst zathura zathura-pdf-mupdf scrcpy wmname arandr bpytop net-tools cmake flatpak tree redshift clang ninja neovim
 sudo pacman -S jdk11-openjdk jre11-openjdk
 
 # Doom Emacs
 sudo pacman -S git emacs ripgrep fd
+
+## OBS
+### Install Headers
+sudo pacman -S linux-headers
+sudo pacman -Sy v4l2loopback-dkms
+sudo pacman -Syu ffmpeg obs-studio vlc
 
 ## Stuff
 yay -S google-chrome spotify windscribe-bin teams slack-desktop onlyoffice-bin
@@ -50,7 +56,6 @@ sudo pacman -Syu nvidia nvidia-utils nvidia-settings
 yay -S system76-power system76-acpi-dkms system76-dkms system76-io-dkms
 sudo systemctl enable com.system76.PowerDaemon.service
 sudo systemctl start com.system76.PowerDaemon.service
-yay -S envycontrol
 
 # Audio Stuff
 sudo pacman -Syu alsa alsa-utils pulsemixer
@@ -59,8 +64,11 @@ sudo pacman -Syu alsa alsa-utils pulsemixer
 sudo pacman -Syu neofetch bspwm sxhkd nitrogen picom rofi
 
 # GNOME stuff
-sudo pacman -S gnome-tweaks
+sudo pacman -S gnome gnome-tweaks
 yay -S gnome-browser-connector
+
+## Applications
+yay -S notion-app figma-linux-bin
 
 ## Qemu
 sudo pacman -S archlinux-keyring
@@ -81,16 +89,10 @@ sudo pacman -S texlive-fontsextra texlive-core texlive-latexextra texlive-pictur
 
 ## More development stuff
 ### Remember to reboot the system after the installation of the keyring stuff
-sudo pacman -Syu nodejs npm
+sudo pacman -Syu nodejs-lts-hydrogen npm yarn
 xdg-mime default zathura.desktop application/pdf
 yay -S visual-studio-code-bin
 sudo pacman -S gnome-keyring libsecret libgnome-keyring seahorse
-
-## OBS
-### Install Headers
-### sudo pacman -S linux61-headers
-sudo pacman -Sy v4l2loopback-dkms
-sudo pacman -Syu ffmpeg obs-studio vlc
 
 # Flatpak
 flatpak install flathub io.github.mimbrero.WhatsAppDesktop -y
