@@ -65,6 +65,8 @@ sudo pacman -Syu neofetch bspwm sxhkd nitrogen picom rofi
 
 # GNOME stuff
 sudo pacman -S gnome gnome-tweaks
+sudo pacman -S packagekit-qt6
+sudo pacman -S gnome-packagekit gnome-software gnome-software-packagekit-plugin
 yay -S gnome-browser-connector
 
 ## Applications
