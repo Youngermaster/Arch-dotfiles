@@ -53,9 +53,21 @@ pip3 install matplotlib numpy matplotlib jupyterlab
 
 ## Graphic Drivers
 sudo pacman -Syu nvidia nvidia-utils nvidia-settings
+yay -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms
+yay -S firmware-manager
+cd ~/GitHub/AnotherOnes
+git clone https://aur.archlinux.org/system76-dkms.git
+cd system76-dkms
+makepkg -srcif
+yay -S system76-dkms
+cd ~/GitHub/AnotherOnes
+git clone https://aur.archlinux.org/system76-acpi-dkms.git
+cd system76-acpi-dkms
+makepkg -srcif
 yay -S system76-power system76-acpi-dkms system76-dkms system76-io-dkms
-sudo systemctl enable com.system76.PowerDaemon.service
+sudo systemctl enable --now com.system76.PowerDaemon.service
 sudo systemctl start com.system76.PowerDaemon.service
+sudo gpasswd -a $USER adm
 
 # Audio Stuff
 sudo pacman -Syu alsa alsa-utils pulsemixer
@@ -67,6 +79,7 @@ sudo pacman -Syu neofetch bspwm sxhkd nitrogen picom rofi
 sudo pacman -S gnome gnome-tweaks
 sudo pacman -S packagekit-qt6
 sudo pacman -S gnome-packagekit gnome-software gnome-software-packagekit-plugin
+yay -S gradience-git
 yay -S gnome-browser-connector
 
 ## Applications
