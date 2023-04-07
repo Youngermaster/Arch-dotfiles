@@ -66,8 +66,11 @@ cd system76-acpi-dkms
 makepkg -srcif
 yay -S system76-power system76-acpi-dkms system76-dkms system76-io-dkms
 sudo systemctl enable --now com.system76.PowerDaemon.service
-sudo systemctl start com.system76.PowerDaemon.service
+sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
+sudo systemctl enable com.system76.PowerDaemon.service
+sudo systemctl start com.system76.PowerDaemon.service
+sudo systemctl mask power-profiles-daemon.service
 
 # Audio Stuff
 sudo pacman -Syu alsa alsa-utils pulsemixer
