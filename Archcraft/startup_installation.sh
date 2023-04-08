@@ -53,8 +53,7 @@ pip3 install matplotlib numpy matplotlib jupyterlab
 
 ## Graphic Drivers
 sudo pacman -Syu nvidia nvidia-utils nvidia-settings
-yay -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms
-yay -S firmware-manager
+yay -S system76-firmware-daemon-git system76-firmware firmware-manager-git system76-power-git gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms
 cd ~/GitHub/AnotherOnes
 git clone https://aur.archlinux.org/system76-dkms.git
 cd system76-dkms
