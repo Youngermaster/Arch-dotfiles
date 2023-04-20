@@ -135,6 +135,9 @@ yay -S waybar-hyprland
 yay -S grim swappy slurp
 yay -S rofi-emoji
 yay -S nwg-look
+## Screen sharing fix
+sudo pacman -S pipewire wireplumber grim slurp
+yay -S xdg-desktop-portal-hyprland-git
 cd ~/GitHub/AnotherOnes
 git clone --depth=1 https://github.com/decaycs/decay-gtk
 cd decay-gtk
