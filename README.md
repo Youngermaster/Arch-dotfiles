@@ -4,14 +4,17 @@ Those are some of my dotfiles for my Arch Linux Machine.
 
 ## How it looks?
 
+### Hyper All Blue (My current daily driver)
+
+This configs are in the folder [`All Blue`](https://github.com/Youngermaster/Arch-dotfiles/tree/main/AllBlue).
+
+![Hyper All Blue 1](Assets/AllBlue-0.png)
+![Hyper All Blue 2](Assets/AllBlue-1.png)
+
 ### Minimal Super Tengen 
 
 ![Minimal Super Tengen Theme 1](Assets/MinimalSuperTengen.png)
 ![Minimal Super Tengen Theme 2](Assets/MinimalSuperTengen2.png)
-
-### HyperCandy (Under development)
-
-This configs are in the folder [`Archcraft`](https://github.com/Youngermaster/Arch-dotfiles/tree/main/Archcraft).
 
 ### Paracelsus Gnome (Under development)
 
@@ -29,7 +32,7 @@ This configs are in the folder [`Archcraft`](https://github.com/Youngermaster/Ar
 
   - [User Themes](https://extensions.gnome.org/extension/19/user-themes/): Load shell themes from user directories.
   - [X11 Gestures](https://extensions.gnome.org/extension/4033/x11-gestures/): Enable GNOME Shell multi-touch gestures on X11.
-  - [AppIndicator](https://extensions.gnome.org/extension/4033/x11-gestures/): Adds AppIndicator, KStatusNotifierItem and legacy Tray icons support to the Shell.
+  - [AppIndicator](https://extensions.gnome.org/extension/615/appindicator-support/): Adds AppIndicator, KStatusNotifierItem and legacy Tray icons support to the Shell.
   - [Aylur's Widget](https://extensions.gnome.org/extension/5338/aylurs-widgets/): Beautiful Plugins with customizable bar.
   - [Blur My Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/): Blur the gnome shell.
   - [Color Picker](https://extensions.gnome.org/extension/3396/color-picker/): The simple color picker for gnome shell.

@@ -142,7 +142,7 @@
         "on-click": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh &"
     },
     "custom/launcher": {
-        "format": "  Youngermaster",
+        "format": " Youngermaster",
         "on-click": "rofi -show drun &"
     }
 }
