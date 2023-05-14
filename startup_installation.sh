@@ -155,8 +155,17 @@ cp -r fonts/* ~/.fonts/
 cp -r fonts/* ~/.local/share/fonts/
 fc-cache -fv
 
+## TODO: Create my custo sugar-dark
+# Personalization to SDDM
+yay -S sddm-sugar-dark
+# Then edit `/usr/lib/sddm/sddm.conf.d/default.conf`
+# And `/usr/share/sddm/themes`
+
 ## ! TODO Add the Fonts from the Google Drive
 ## ! TODO add the README.md pictures
 
 # Check out these dotfiles
 # https://github.com/iamverysimp1e/dots
+
+# making Android Studio global
+sudo ln -s /home/youngermaster/AndroidStudio/android-studio/bin/studio.sh /usr/bin/android-studio
