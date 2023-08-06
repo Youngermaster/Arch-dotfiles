@@ -127,14 +127,15 @@ yay -S polkit-gnome ffmpeg neovim viewnior       \
 pavucontrol thunar starship wl-clipboard wf-recorder     \
 swaybg grimblast-git ffmpegthumbnailer tumbler playerctl      \
 noise-suppression-for-voice thunar-archive-plugin kitty       \
-waybar-hyprland wlogout swaylock-effects pamixer     \
+waybar-hyprland-git wlogout swaylock-effects pamixer     \
 nwg-look-bin papirus-icon-theme dunst
 yay -S rofi dunst kitty swaybg swaylock-fancy-git swayidle pamixer light brillo
-yay -S bc blueberry bluez coreutils dbus findutils gawk jaq light networkmanager network-manager-applet pavucontrol playerctl procps ripgrep socat udev upower util-linux wget wireplumber wlogout eww-wayland pipewire-pulse
-yay -S waybar-hyprland
+yay -S bc blueberry bluez coreutils dbus findutils gawk jaq-git light networkmanager network-manager-applet pavucontrol playerctl procps ripgrep socat udev upower util-linux wget wireplumber wlogout eww-wayland pipewire-pulse
+yay -S waybar-hyprland-git
 yay -S grim swappy slurp
-yay -S rofi-emoji
+yay -S rofi-emoji ttf-font-awesome
 yay -S nwg-look
+sudo chmod +s /usr/bin/light
 ## Screen sharing fix
 sudo pacman -S pipewire wireplumber grim slurp
 yay -S xdg-desktop-portal-hyprland-git
